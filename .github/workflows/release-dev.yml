@@ -28,3 +28,7 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
     
+    - name: Build, push to ECR
+      run: |
+        docker build -t 300889533047.dkr.ecr.eu-west-1.amazonaws.com/aws-expenses
+        docker push 300889533047.dkr.ecr.eu-west-1.amazonaws.com/aws-expenses
