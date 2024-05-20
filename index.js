@@ -7,6 +7,6 @@ var apiName = "expenses"
 
 const api = new Controller(apiName, config.config);
 
-api.path('GET', '/expenses', getExpenses);
+api.path('GET', '/node/expenses', getExpenses);
 
 api.listen();
